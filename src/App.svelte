@@ -1,6 +1,7 @@
 <script>
   import service from "./app";
   import { marked } from "marked";
+  import { Wave } from "svelte-loading-spinners";
 
   let openSubmitModal = false;
 
@@ -83,11 +84,9 @@
 />
 <div class="modal">
   <div class="modal-box">
-    <div class="grid items-center justify-center bg-[#f2f3f4]">
-      <img
-        src="https://arweave.net/IkMJRqi_0Xx_QhstK4WE3rsQqQxC07n84UagPgqGXfc"
-        alt="loading"
-      />
+    <div class="grid items-center justify-center bg-[#f2f3f4] py-16">
+      <div class="flex items-center justify-center"><Wave size="60" /></div>
+      <div class="mt-4 font-mono">Generating a Response...</div>
     </div>
   </div>
 </div>
