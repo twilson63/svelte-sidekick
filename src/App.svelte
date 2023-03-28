@@ -50,6 +50,11 @@
             >
           {/if}
         </form>
+        <div class="mt-2 text-sm font-light font-mono text-center">
+          Powered by <a class="link" href="https://otherwill.com">Otherwill</a>
+          - Instant Answers - Just Add Docs -
+          <a class="link" href="https://svelte.dev">Svelte Docs</a>
+        </div>
         <div class="mx-auto">
           {#each context.hx as response}
             <div class="card mt-16">
